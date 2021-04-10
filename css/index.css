@@ -658,16 +658,17 @@ footer {
 }
 .how {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
-  border-left: dotted 0.1rem #242943;
-  border-right: dotted 0.1rem #242943;
-  padding: 2rem;
+  /* border-left: dotted 0.1rem #242943;
+  border-right: dotted 0.1rem #242943; */
+  margin: 0rem;
 }
 .how h2 {
+  font-size: 5rem;
   letter-spacing: 0.4rem;
   color: #343A40;
   padding-bottom: 1rem;
@@ -679,7 +680,7 @@ footer {
 }
 .how h4 {
   letter-spacing: 0.3rem;
-  color: #FF7F50;
+  color: #343a40;
   padding-bottom: 1rem;
 }
 @media (max-width: 800px) {
@@ -687,17 +688,17 @@ footer {
     font-size: 1.6rem;
   }
 }
-.how p {
-  color: #a9a9a9;
-}
+
 .howTo {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin: 0rem;
+  padding: 0rem;
 }
 .howTo h5 {
-  color: #FFFAFA;
+  color: #343a40;
   font-size: 1.8rem;
   letter-spacing: 0.15rem;
   padding-bottom: 1rem;
@@ -715,14 +716,24 @@ footer {
 .howTo-boxes {
   background-image: url("/images/benefits-boxes-background.jpg");
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
+}
+.howTo-boxes details {
+  font-size: 2rem;
+  margin: 1.5rem 0rem;
+}
+.howTo-boxes .iframe {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .howTo-boxes p {
-  font-size: 1.2rem;
-  color: #ffb79d;
+  font-size: 1.6rem;
+  color: #343a40;
 }
 @media (max-width: 800px) {
   .howTo-boxes p {
@@ -747,7 +758,7 @@ footer {
 .howTo-boxes div {
   padding: 2.5rem;
 }
-.findOutMore {
+/* .findOutMore {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -770,7 +781,7 @@ footer {
   color: #FF7F50;
   text-decoration: none;
   padding: 1rem 1.5rem;
-}
+} */
 .container .testimonials {
   display: flex;
   justify-content: center;
