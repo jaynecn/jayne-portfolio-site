@@ -35,9 +35,10 @@ h4 {
 p {
   font-size: 1.25rem;
   line-height: 1.8;
-} */ */
+}
 .container {
-  max-width: 800px;
+  max-width: 1000px;
+  /* border: 1px solid purple; */
   width: 100%;
   margin: 0 auto;
 }
@@ -72,6 +73,7 @@ footer {
   padding: 1rem 0rem 1rem 5rem;
 }
 .container .intro {
+  border: 1px solid purple;
   background-color: #FFFAFA;
   display: flex;
   flex-direction: row;
@@ -80,6 +82,12 @@ footer {
   color: #FFFAFA;
   padding: 4rem 0rem;
   
+}
+.container div {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 800px) {
   .container .intro {
@@ -551,6 +559,7 @@ footer {
   display: flex;
   /* flex-direction: column; */
   justify-content: space-around;
+  flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
@@ -569,13 +578,17 @@ footer {
     font-size: 2.25rem;
   }
 }
-.how h4 {
+.how a {
+  text-decoration-color: #ff7f50;
+  text-decoration-style: dashed;
+  font-size: 2rem;
+  font-weight: bold;
   letter-spacing: 0.3rem;
   color: #343a40;
   padding-bottom: 1rem;
 }
 @media (max-width: 800px) {
-  .how h4 {
+  .how a {
     font-size: 1.6rem;
   }
 }
