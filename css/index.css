@@ -68,11 +68,31 @@ nav a {
     font-size: 2rem;
   }
 }
+
+/* FOOTER */
+
 footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   background-color: #242943;
   color: #FFFAFA;
   padding: 1rem 0rem 1rem 5rem;
 }
+footer img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0rem 1rem;
+}
+footer a {
+  text-decoration-color: #ff7f50;
+  text-decoration-style: dashed;
+  color: #FFFAFA;
+}
+
+
+
+
 .container .intro {
   /* border: 1px solid purple; */
   background-color: #FFFAFA;
@@ -196,12 +216,15 @@ footer {
 
 
 
-.container .jcn {
-  width: 80%;
+.container .jayne-image {
   height: auto;
   border-radius: .5rem;
   border: .5rem solid #343A40 ;
-  margin: 2rem 0rem;
+  margin: 2rem;
+}
+.container .jayne-image img {
+  width: 100%;
+  padding: 0rem;
 }
 .container .about-intro {
   background-color: #FFFAFA;
@@ -656,6 +679,9 @@ footer {
   color: #696969;
   font-size: 1.6rem;
 }
+.container .testimonials img {
+  width: 40rem;
+}
 .container .testimonials .left-button {
   top: 50%;
   left: 25px;
@@ -673,10 +699,11 @@ footer {
 .container .testimonials .testimonial {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  /* justify-content: center; */
+  align-items: baseline;
   width: 60%;
   text-align: center;
+  min-height: 30rem;
 }
 .container .testimonials .right-button {
   top: 50%;
