@@ -37,8 +37,9 @@ p {
   line-height: 1.8;
 }
 .container {
-  max-width: 1000px;
-  /* border: 1px solid purple; */
+  max-width: 100rem;
+  min-height: 50rem;
+  /* border: 1px solid red; */
   width: 100%;
   margin: 0 auto;
 }
@@ -73,7 +74,7 @@ footer {
   padding: 1rem 0rem 1rem 5rem;
 }
 .container .intro {
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
   background-color: #FFFAFA;
   display: flex;
   flex-direction: row;
@@ -126,6 +127,7 @@ footer {
 .container .intro h1 {
   color: #343A40;
   padding: 0rem;
+  margin: 0rem;
   text-decoration: none;
 }
 @media (max-width: 800px) {
@@ -135,21 +137,28 @@ footer {
 }
 @media (max-width: 500px) {
   .container .intro h1 {
-    padding: 1.5rem;
+    padding: 0rem;
+    margin: 0rem;
   }
 }
 .container .intro h2 {
   padding: 1.5rem;
 }
 .container .main-image {
+  min-height: 52.5rem;
   background-color: #F1F4F8;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
 }
 .container .image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   position: relative;
-  width: 100%;
-  max-width: 1000px;
+  justify-content: left;
+  /* width: 100%;
+  max-width: 1000px; */
   margin: 1rem;
 }
 /* .container .main-image .image-container img .jcn {
@@ -170,107 +179,8 @@ footer {
 }
 
 
-  text-align: center;
-  padding: 3rem;
-  border: dotted 0.1rem #242943;
-}
-.container .one-click h3 {
-  color: #FFFAFA;
-  letter-spacing: 0.15rem;
-  padding-bottom: 1rem;
-}
-@media (max-width: 800px) {
-  .container .one-click h3 {
-    font-size: 3rem;
-  }
-}
-.container .one-click h4 {
-  color: #696969;
-}
-@media (max-width: 800px) {
-  .container .one-click h4 {
-    color: #a9a9a9;
-    font-size: 1.8rem;
-  }
-}
-.container .benefits {
-  background-image: url("/images/star-background.jpg");
-  color: #FFFAFA;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 0 2rem 3rem 4rem;
-}
-@media (max-width: 500px) {
-  .container .benefits {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-}
-.container .benefits-boxes {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  text-align: left;
-  color: #a9a9a9;
-  padding: 2rem;
-}
-@media (max-width: 500px) {
-  .container .benefits-boxes {
-    display: flex;
-    text-align: center;
-    color: #9c9c9c;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
-.container .benefits-boxes .benefits-cta {
-  color: #FFFAFA;
-}
-@media (max-width: 800px) {
-  .container .benefits-boxes .benefits-cta {
-    font-size: 2.4rem;
-    color: #ffb79d;
-  }
-}
-.container .benefits-boxes .benefits-img {
-  width: 20%;
-}
-@media (max-width: 800px) {
-  .container .benefits-boxes .benefits-img {
-    width: 15%;
-  }
-}
-@media (max-width: 500px) {
-  .container .benefits-boxes .benefits-img {
-    width: 30%;
-  }
-}
-.container .benefits-boxes h5 {
-  font-size: 2rem;
-  letter-spacing: 0.15rem;
-}
-@media (max-width: 500px) {
-  .container .benefits-boxes h5 {
-    padding: 1rem 0rem;
-  }
-}
-.container .benefits-boxes p {
-  font-size: 1.5rem;
-}
-@media (max-width: 800px) {
-  .container .benefits-boxes p {
-    font-size: 1.8rem;
-    color: #a9a9a9;
-  }
-} */
+ 
+
 @media (max-width: 800px) {
   .container #box-1 {
     display: flex;
@@ -297,8 +207,9 @@ footer {
   background-color: #FFFAFA;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   color: #343a40;
   text-decoration: none;
   padding: 4rem 0rem;
